@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title><%= title %> </title>
+    <% include ./partials/head %>
+
+  </head>
+  
+    <body>
+            <header id="homes">
+                    <!-- Background Image -->
+                    <div class="bg-img" style="background-image: url('./img/18.jpg');">
+                      <div class="overlays"></div>
+                    </div>
+                    <!-- /Background Image -->
+                
+                    <!-- Nav -->
+                    <% include ./partials/header %>
+                    <!-- /Nav -->
+                
+                    <!-- home wrapper -->
+                    <div class="home-wrapper">
+                      <div class="container">
+                        <div class="row">
+                
+                          <!-- home content -->
+
+                          <!-- /home content -->
+                          
+                
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /home wrapper -->
+                
+                  </header>
+                  <!-- /Header -->
+                  <% include ./partials/gallery %>
+                  <% include ./partials/contact %>
+                  <% include ./partials/footer %>
+                  <% include ./partials/preloader %>          
+    </body>
+</html>

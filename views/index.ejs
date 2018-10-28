@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title><%= title %> </title>
+    <% include ./partials/head %>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="home">
+      <!-- Background Image -->
+      <div class="bg-img" style="background-image: url('./img/15.jpg');">
+        <div class="overlay"></div>
+      </div>
+      <!-- /Background Image -->
+
+      <!-- Nav -->
+      <% include ./partials/header %>
+      <!-- /Nav -->
+
+      <div class="home-wrapper">
+          <div class="container">
+            <div class="row">
+
+              <!-- home content -->
+              <div class="col-md-10 col-md-offset-1">
+                <div class="home-content">
+                  <h1 class="white-text"><%= __("title") %></h1>
+                  <p class="white-text"><%= __("des-1") %>
+                  </p>
+                  <a href="/booking"><button class="white-btn"><%= __("button-1") %></button></a>
+                  <a href="/prices"><button class="main-btn"><%= __("button-2") %></button></a>
+                </div>
+              </div>
+              <!-- /home content -->
+
+            </div>
+          </div>
+        </div>
+      <!-- /home wrapper -->
+
+    </header>
+    <!-- /Header -->
+
+    <% include ./partials/about %>
+    <iframe width="100%" height="400px" frameborder="0"
+   src="https://www.youtube.com/embed/AyHGlH4Nw4g?autoplay=1&mute=1&modestbranding=1&autohide=1&showinfo=0&controls=0&loop=1">
+   </iframe>
+        <% include ./partials/pricing %>
+    <div id="features" class="section md-padding bg-grey">
+
+      <!-- Container -->
+      <div class="container">
+
+        <!-- Row -->
+        <div class="row">
+
+          <!-- why choose us content -->
+          <div class="col-md-6">
+            <div class="section-header">
+              <h2 class="title"><%= __("why") %></h2>
+            </div>
+            <p><%= __("why-1") %></p>
+            <div class="feature">
+              <i class="fa fa-check"></i>
+              <p><%= __("why-2") %></p>
+            </div>
+            <div class="feature">
+              <i class="fa fa-check"></i>
+              <p><%= __("why-3") %></p>
+            </div>
+            <div class="feature">
+              <i class="fa fa-check"></i>
+              <p><%= __("why-4") %></p>
+            </div>
+            <div class="feature">
+              <i class="fa fa-check"></i>
+              <p><%= __("why-5") %></p>
+            </div>
+          </div>
+          <!-- /why choose us content -->
+
+          <!-- About slider -->
+          <div class="col-md-6">
+            <div id="about-slider" class="owl-carousel owl-theme">
+              <img class="img-responsive" src="./img/wcu2.jpg" alt="testimonial-slider">
+              <img class="img-responsive" src="./img/wcu1.jpg" alt="testimonial-slider">
+              <img class="img-responsive" src="./img/15.jpg" alt="testimonial-slider">
+              <img class="img-responsive" src="./img/wcu3.jpg" alt="testimonial-slider">
+            </div>
+          </div>
+          <!-- /About slider -->
+
+        </div>
+        <!-- /Row -->
+
+      </div>
+      <!-- /Container -->
+
+    </div>
+    <!-- /Why Choose Us -->
+
+
+
+    <!-- Testimonial -->
+    <div id="testimonial" class="section md-padding">
+
+      <!-- Background Image -->
+      <div class="bg-img" style="background-image: url('./img/13.jpg');">
+        <div class="overlays"></div>
+      </div>
+      <!-- /Background Image -->
+
+      <!-- Container -->
+      <div class="container">
+
+        <!-- Row -->
+        <div class="row">
+
+          <!-- Testimonial slider -->
+          <div class="col-md-10 col-md-offset-1">
+              <!-- testimonial -->
+              <% for (var i = 0; i < data.length; i++) { %>
+              <div class="testimonial">
+                <div class="testimonial-meta">
+                  <h3 class="white-text"><%= data[i].nickname %></h3>
+                </div>
+                <p class="white-text"><%= data[i].experience %></p>
+              </div>
+              <!-- /testimonial -->
+              <% } %>
+              <!-- contact form -->
+              <div>
+                <form action="/reviews" method="POST" class="contact-form">
+                    <div class="section-center">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-9">
+                            <div class="booking-form booking-forms">
+                              <form>
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <div class="form-group">
+                                      <input class="form-control form-controls" name="nickname" placeholder="Full name" required />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <div class="form-group">
+                                      <textarea class="form-control form-controls" placeholder="Details of experience" name="experience" ></textarea>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-btn">
+                                  <button class="submit-btn submit-btns">Save</button>
+                                </div>
+                              </form>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- /contact form -->
+
+          </div>
+          <!-- /Testimonial slider -->
+
+
+        </div>
+        <!-- /Row -->
+
+      </div>
+      <!-- /Container -->
+
+    </div>
+    <!-- /Testimonial -->
+
+    <!-- Blog
+    <div id="blog" class="section md-padding bg-grey">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="section-header text-center">
+            <h2 class="title">Recents news</h2>
+          </div>
+
+          <div class="col-md-4">
+            <div class="blog">
+              <div class="blog-img">
+                <img class="img-responsive" src="./img/blog1.jpg" alt="">
+              </div>
+              <div class="blog-content">
+                <ul class="blog-meta">
+                  <li><i class="fa fa-user"></i>John doe</li>
+                  <li><i class="fa fa-clock-o"></i>18 Oct</li>
+                  <li><i class="fa fa-comments"></i>57</li>
+                </ul>
+                <h3>Molestie at elementum eu facilisis sed odio</h3>
+                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+                <a href="blog-single.html">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="blog">
+              <div class="blog-img">
+                <img class="img-responsive" src="./img/blog2.jpg" alt="">
+              </div>
+              <div class="blog-content">
+                <ul class="blog-meta">
+                  <li><i class="fa fa-user"></i>John doe</li>
+                  <li><i class="fa fa-clock-o"></i>18 Oct</li>
+                  <li><i class="fa fa-comments"></i>57</li>
+                </ul>
+                <h3>Molestie at elementum eu facilisis sed odio</h3>
+                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+                <a href="blog-single.html">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="blog">
+              <div class="blog-img">
+                <img class="img-responsive"  src="./img/blog3.jpg" alt="">
+              </div>
+              <div class="blog-content">
+                <ul class="blog-meta">
+                  <li><i class="fa fa-user"></i>John doe</li>
+                  <li><i class="fa fa-clock-o"></i>18 Oct</li>
+                  <li><i class="fa fa-comments"></i>57</li>
+                </ul>
+                <h3>Molestie at elementum eu facilisis sed odio</h3>
+                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+                <a href="blog-single.html">Read more</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+      -->
+      <% include ./partials/gallery %>
+    <% include ./partials/contact %>
+
+
+    <!-- Footer -->
+    <% include ./partials/footer %>
+
+    <!-- Back to top -->
+    <a href='/booking'><div id="back-to-top">BOOK NOW</div></a>
+    <!-- /Back to top -->
+
+    <!-- Preloader -->
+    <% include ./partials/preloader %>
+    <!-- /Preloader -->
+
+</body>
+</html>
