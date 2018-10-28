@@ -7,11 +7,11 @@
 
 # Used Technologies
 
-> node.js
-> expeess.js
-> ejs
-> node-mailer
-> i18n-2
-> mongodb
-> now (hosting)
-> body-parser
+ - node.js
+ - express.js
+ - ejs
+ - node-mailer
+ - i18n
+ - mongodb
+ - now (hosting)
+ - body-parser
