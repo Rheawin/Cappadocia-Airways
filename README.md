@@ -1,4 +1,4 @@
-# Cappadocia Airways 	hotair.balloons.com
+# Cappadocia Airways 	hotair-balloons.com
 ## How to Run
     clone https://github.com/Rheawin/cappadocia-airways.git
     npm install
