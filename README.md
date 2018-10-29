@@ -2,7 +2,7 @@
 ## How to Run
     clone https://github.com/Rheawin/cappadocia-airways.git
     npm install
-    npm startenter
+    npm start
 
 
 # Used Technologies
