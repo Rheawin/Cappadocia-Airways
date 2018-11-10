@@ -57,7 +57,7 @@ router.post('/message' , function(req, res, next) {
       from: `"YENİ REZERVASYON" <cappadocia-airways@yandex.com.tr>`,
       to: 'cappadocia-airways@yandex.com.tr',
     subject: 'New Message! | '+req.body.tour,
-    html: 'from: '+req.body.mail+'<br>Name: '+req.body.name+'<br>Telephone:'+req.body.mobile+'<br>Hotel:'+req.body.hotel+'<br>Date:'+req.body.date+'<br>Country:'+req.body.country+'<br>Tour:'+req.body.tour+'<br>Adults:'+req.body.adult+'<br>Children:'+req.body.children+'<hr>details:'+req.body.details
+    html: 'from: '+req.body.mail+'<br>Name: '+req.body.name+'<br>Telephone:'+req.body.mobile+'<br>Hotel:'+req.body.hotel+'<br>Date:'+req.body.date+'<br>Country:'+req.body.country+'<br>Tour:'+req.body.tour+'<br>Adults:'+req.body.adult+'<br>Children:'+req.body.children+'<br><hr>details:'+req.body.details
   };
   transporter.sendMail(mailOptions, function (err, info) {
      if(err)
