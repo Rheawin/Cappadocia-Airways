@@ -13,7 +13,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-mongoose.connect('mongodb://<username>:<password>@ds113443.mlab.com:13443/local_library')
+mongoose.connect('mongodb://rhaenwa:asdas111@ds113443.mlab.com:13443/local_library')
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use(logger('dev'));
