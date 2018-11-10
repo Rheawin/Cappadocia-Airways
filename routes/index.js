@@ -49,13 +49,13 @@ router.post('/message' , function(req, res, next) {
       host: 'smtp.yandex.com',
       port: 465,
       auth: {
-          user: 'cappadocia-airways@yandex.com.tr',
-          pass: 'asdas111' },
+          user: '<username>',
+          pass: '<password>' },
       secure: true
   })
   const mailOptions = {
       from: `"YENİ REZERVASYON" <cappadocia-airways@yandex.com.tr>`,
-      to: 'cappadocia-airways@yandex.com.tr',
+      to: '<username>',
     subject: 'New Message! | '+req.body.tour,
     html: 'from: '+req.body.mail+'<br>Name: '+req.body.name+'<br>Telephone:'+req.body.mobile+'<br>Hotel:'+req.body.hotel+'<br>Date:'+req.body.date+'<br>Country:'+req.body.country+'<br>Tour:'+req.body.tour+'<br>Adults:'+req.body.adult+'<br>Children:'+req.body.children+'<hr>details:'+req.body.details
   };
