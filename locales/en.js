@@ -4,7 +4,7 @@
 	"header-3": "About us",
 	"header-4": "Gallery",
 	"header-5": "Online Booking",
-	"title": "Hot Air Balloon TOurs",
+	"title": "Cappadocia Hot Air Balloon Tours",
 	"des-1": "We are from Cappadocia. We are in tourism sector since 2003. If you decide to work with us, you can directly contact to your balloon pilot without the mediator. Would you like to work with a proffesional, friendly, experienced team?",
 	"welcome": "Welcome to Cappadocia Airways Website",
 	"who": "Who We Are?",
@@ -44,9 +44,9 @@
 	"date": "Date*",
 	"country": "Country",
 	"t-detail": "Tour Details*",
-	"adults": "Adults*",
-	"children": "Children*",
+	"number": "Number of People*",
 	"detail": "Details",
 	"button-1": "Contact Us!",
-	"button-2": "Learn More"
+	"button-2": "Learn More",
+	"children": "children"
 }

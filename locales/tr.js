@@ -44,8 +44,7 @@
 	"date": "Tarih*",
 	"country": "Ülke",
 	"t-detail": "Tur Detayları*",
-	"adults": "Yetişkin Sayısı*",
-	"children": "Çocuk Sayısı*",
+	"number": "Kişi Sayısı*",
 	"detail": "Detaylar",
 	"button-1": "İletişime Geç!",
 	"button-2": "Daha Fazlası"

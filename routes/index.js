@@ -50,21 +50,23 @@ router.post('/message' , function(req, res, next) {
       port: 465,
       auth: {
           user: 'cappadocia-airways@yandex.com.tr',
-          pass: 'asdas111' },
+          pass: '2782765td' },
       secure: true
   })
   const mailOptions = {
       from: `"YENİ REZERVASYON" <cappadocia-airways@yandex.com.tr>`,
-      to: 'cappadocia-airways@yandex.com.tr',
+      to: 'contact@hotair-balloons.com',
     subject: 'New Message! | '+req.body.tour,
-    html: 'from: '+req.body.mail+'<br>Name: '+req.body.name+'<br>Telephone:'+req.body.mobile+'<br>Hotel:'+req.body.hotel+'<br>Date:'+req.body.date+'<br>Country:'+req.body.country+'<br>Tour:'+req.body.tour+'<br>Adults:'+req.body.adult+'<br>Children:'+req.body.children+'<br><hr>details:'+req.body.details
+    html: 'Kimden: '+req.body.mail+'<br>İsim: '+req.body.name+'<br>Telefon:'+req.body.mobile+'<br>Hotel:'+req.body.hotel+'<br>Tarih:'+req.body.date+'<br>Ülke:'+req.body.country+'<br>Tur:'+req.body.tour+'<br>Yetişkin sayısı:'+req.body.number+'<br><hr>details:'+req.body.details
   };
   transporter.sendMail(mailOptions, function (err, info) {
      if(err)
        console.log(err)
      else
        console.log(info);
-       res.render('index', { title: 'Cappadocia Airways | Hot Air Balloons Cappadocia' });
-  });
+       Review.find({},(err,data) => {
+        res.render('index', { title: 'Cappadocia Airways | Hot Air Balloons Cappadocia', data: data });
+      })
+});
 })
 module.exports = router;
