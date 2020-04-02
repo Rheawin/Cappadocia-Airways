@@ -13,7 +13,10 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-mongoose.connect('mongodb://rhaenwa:asdas111@ds113443.mlab.com:13443/local_library')
+mongoose.connect('mongodb://rhaenwa:asdas111@ds113443.mlab.com:13443/local_library', {
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+  })
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use(logger('dev'));
@@ -49,8 +52,9 @@ app.use('/about', indexRouter);
 app.use('/message', indexRouter)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  next(createError(404));
+  res.render('error', { message: 'a' });
 });
+
 
 // error handler
 app.use(function(err, req, res, next) {
