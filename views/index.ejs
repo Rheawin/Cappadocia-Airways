@@ -3,266 +3,889 @@
   <head>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title><%= title %> </title>
-    <% include ./partials/head %>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must come first in the head; any other head content must come *after* these tags -->
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144365299-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144365299-1');
+      </script>
+
+      <title>Cappadocia Hot Air Balloons | Cappadocia Airways </title>
+            <meta charset="utf-8">
+        <meta http-equiv="Content-Language" content="en" />
+        <meta name="content-language" content="en-US" />
+        <meta name="description" content="Cappadocia balloon tours best prices here.You should experience fly over the fairy chimneys, mountains, landscapes" />
+        <meta name="keywords" content="Cappadocia Balloon, Hot air balloon,balloon flight,Cappadocia Tour" />
+        <meta name="author" content="Gorkem Uz" />
+        <meta name="owner" content="Cappadocia Airway" />
+        <meta name="copyright" content="(c) 2018" />
+        <meta name="robots" content="index,follow" />
+        
+        <meta name="yandex-verification" content="ee90c698f073e26b" />
+    
+    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+     
+        <link href="img/favicon.png" rel="icon">
+        <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+      
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+      
+        <!-- Bootstrap CSS File -->
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      
+        <!-- Libraries CSS Files -->
+        <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/venobox/venobox.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+      
+        <!-- Main Stylesheet File -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- Event snippet for telefon conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-791290229/32CuCMOz56IBEPXCqPkC',
+      'event_callback': callback
+  });
+  console.log("tıklandıtıklandı")
+  return false;
+}
+</script>
+
+      <meta name="google-site-verification" content="yrlmIDREZfx-T9BMq9xt9FA5Uj6KFI0Cp9FfsBwJbLE" />
+    
+    </head>
   </head>
 
   <body>
-    <!-- Header -->
-    <header id="home">
-      <!-- Background Image -->
-      <div class="bg-img" style="background-image: url('./img/29.jpg');">
-        <div class="overlay"></div>
+
+    <!--==========================
+      Header
+    ============================-->
+    <header id="header">
+      <div class="container">
+  
+        <div id="logo" class="pull-left">
+          <!-- Uncomment below if you prefer to use a text logo -->
+          <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+          <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a>
+        </div>
+  
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="#intro">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#buy-tickets">Prices</a></li>
+            <li><a href="#portfolio">Gallery</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li class="buy-tickets"><a href="#contact">BOOK NOW!</a></li>
+            <li><a class="tel" href="https://wa.me/+905468691846" onclick="gtag_report_conversion()"><i class="fa fa-lg fa-whatsapp"></i> +90 546 869 1846</a></li>
+          </ul>
+        </nav><!-- #nav-menu-container -->
       </div>
-      <!-- /Background Image -->
-
-      <!-- Nav -->
-      <% include ./partials/header %>
-      <!-- /Nav -->
-
-      <div class="home-wrapper">
-          <div class="container">
-            <div class="row">
-
-              <!-- home content -->
-              <div class="col-md-10 col-md-offset-1">
-                <div class="home-content">
-                  <h1 class="white-text"><%= __("title") %></h1>
-                  <p class="white-text"><%= __("des-1") %>
-                  </p>
-                  <a href="/booking"><button class="white-btn"><%= __("button-1") %></button></a>
-                  <a href="/prices"><button class="main-btn"><%= __("button-2") %></button></a>
-                </div>
-              </div>
-              <!-- /home content -->
-
+    </header><!-- #header -->
+  
+    <!--==========================
+      Intro Section
+    ============================-->
+    <section id="intro">
+      <div class="intro-container wow fadeIn">
+        <h1 class="mb-4 pb-0">Cappadocia<br><span>Hot air balloon</span> tours</h1>
+        <p class="mb-4 pb-0">We are not an agency, just crew inside the balloon sector. So you can take your service without intermediary people. </p>
+        <a href="https://www.youtube.com/watch?v=SGzPt8M-dgo" class="venobox play-btn mb-4" data-vbtype="video"
+          data-autoplay="true"></a>
+        <a href="#contact" class="about-btn scrollto">Online Booking</a>
+      </div>
+    </section>
+  
+    <main id="main">
+  
+      <!--==========================
+        About Section
+      ============================-->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2">
             </div>
+            <div class="col-lg-8">
+              <h2 class="orta">About Us</h2>
+              <p>Cappadocia Airways is hot air balloon crew from Cappadocia. We are people from the balloon industry , we are not an agency. We have created this business to offer non-mediator service. Our single purpose is serve up helpful, affordable, full service. As a result of non-mediator service, you can ask us everything, not about just hot air balloons. If you are searching for hotel or area tours you can contact us directly on whatsapp, for our local knowledge and experiment. In short we can help everything about Cappadocia, just get in touch with us. </p>
+            </div>
+            <div class="col-lg-2">
+            </div>
+          </div>
           </div>
         </div>
-      <!-- /home wrapper -->
-
-    </header>
-    <!-- /Header -->
-
-    <% include ./partials/about %>
-    <iframe width="100%" height="400px" frameborder="0"
-   src="https://www.youtube.com/embed/AyHGlH4Nw4g?autoplay=1&mute=1&modestbranding=1&autohide=1&showinfo=0&controls=0&loop=1">
-   </iframe>
-        <% include ./partials/pricing %>
-    <div id="features" class="section md-padding bg-grey">
-
-      <!-- Container -->
-      <div class="container">
-
-        <!-- Row -->
-        <div class="row">
-
-          <!-- why choose us content -->
-          <div class="col-md-6">
-            <div class="section-header">
-              <h2 class="title"><%= __("why") %></h2>
-            </div>
-            <p><%= __("why-1") %></p>
-            <div class="feature">
-              <i class="fa fa-check"></i>
-              <p><%= __("why-2") %></p>
-            </div>
-            <div class="feature">
-              <i class="fa fa-check"></i>
-              <p><%= __("why-3") %></p>
-            </div>
-            <div class="feature">
-              <i class="fa fa-check"></i>
-              <p><%= __("why-4") %></p>
-            </div>
-            <div class="feature">
-              <i class="fa fa-check"></i>
-              <p><%= __("why-5") %></p>
-            </div>
+      </section>
+      
+      <!--==========================
+        Buy Ticket Section
+      ============================-->
+      <section id="buy-tickets" class="section-with-bg wow fadeInUp">
+        <div class="container">
+  
+          <div class="section-header">
+            <h2>Pricing Table Hot Air Balloon Tours</h2>
           </div>
-          <!-- /why choose us content -->
-
-          <!-- About slider -->
-          <div class="col-md-6">
-            <div id="about-slider" class="owl-carousel owl-theme">
-              <img class="img-responsive" src="./img/wcu2.jpg" alt="testimonial-slider">
-              <img class="img-responsive" src="./img/wcu1.jpg" alt="testimonial-slider">
-              <img class="img-responsive" src="./img/15.jpg" alt="testimonial-slider">
-              <img class="img-responsive" src="./img/wcu3.jpg" alt="testimonial-slider">
-            </div>
-          </div>
-          <!-- /About slider -->
-
-        </div>
-        <!-- /Row -->
-
-      </div>
-      <!-- /Container -->
-
-    </div>
-    <!-- /Why Choose Us -->
-
-
-
-    <!-- Testimonial -->
-    <div id="testimonial" class="section md-padding">
-
-      <!-- Background Image -->
-      <div class="bg-img" style="background-image: url('./img/13.jpg');">
-        <div class="overlays"></div>
-      </div>
-      <!-- /Background Image -->
-
-      <!-- Container -->
-      <div class="container">
-
-        <!-- Row -->
-        <div class="row">
-
-          <!-- Testimonial slider -->
-          <div class="col-md-10 col-md-offset-1">
-              <!-- testimonial -->
-              <% for (var i = 0; i < data.length; i++) { %>
-              <div class="testimonial">
-                <div class="testimonial-meta">
-                  <h3 class="white-text"><%= data[i].nickname %></h3>
+  
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">Standard Flight</h5>
+                  <h6 class="card-price text-center">£200</h6>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span> Full Insurance Coverage For Passenger Starting Picked Up From Your Hotel. </li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>We Pick You Up And Drop You Off To Your Hotel. </li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Champagne Party After Flight. (Alcohol Free) </li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Certificate After Balloon Landing. </li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Between 0-6 Years Old Kids Not Allowed For Balloon Ride.</li>
+                    </ul>
+                    <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>20 People On The Balloon. </li>
+                  </ul>
+                  <hr>
+                  <div class="text-center">
+                    <a href="#contact"><button type="button" class="btn">BOOKING</button></a>
+                  </div>
                 </div>
-                <p class="white-text"><%= data[i].experience %></p>
               </div>
-              <!-- /testimonial -->
-              <% } %>
-              <!-- contact form -->
-              <div>
-                <form action="/reviews" method="POST" class="contact-form">
-                    <div class="section-center">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-md-9">
-                            <div class="booking-form booking-forms">
-                              <form>
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <div class="form-group">
-                                      <input class="form-control form-controls" name="nickname" placeholder="Full name" required />
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <div class="form-group">
-                                      <textarea class="form-control form-controls" placeholder="Details of experience" name="experience" ></textarea>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="form-btn">
-                                  <button class="submit-btn submit-btns">Save</button>
-                                </div>
-                              </form>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">Comfortable Fligt</h5>
+                  <h6 class="card-price text-center">£250</h6>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span> Full Insurance Coverage For Passenger Starting Picked Up From Your Hotel. </li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>We Pick You Up And Drop You Off To Your Hotel. </li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Champagne Party After Flight. (Alcohol Free) </li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Certificate After Balloon Landing. </li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Between 0-6 Years Old Kids Not Allowed For Balloon Ride.</li>
+                    </ul>
+                    <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>16 People On The Balloon. </li>
+                  </ul>
+                  <hr>
+                  <div class="text-center">
+                    <a href="#contact"><button type="button" class="btn">BOOKING</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Pro Tier -->
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">Full Comfortable Flight</h5>
+                  <h6 class="card-price text-center">£300</h6>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span> Full Insurance Coverage For Passenger Starting Picked Up From Your Hotel. </li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>We Pick You Up And Drop You Off To Your Hotel. </li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Champagne Party After Flight. (Alcohol Free) </li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Certificate After Balloon Landing. </li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Between 0-6 Years Old Kids Not Allowed For Balloon Ride.</li>
+                    </ul>
+                    <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>12 People On The Balloon. </li>
+                  </ul>
+                  <hr>
+                  <div class="text-center">
+                    <a href="#contact"><button type="button" class="btn">BOOKING</button></a>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- Modal Order Form -->
+        <div id="buy-ticket-modal" class="modal fade">  
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Buy Tickets</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form method="POST" action="#">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name=" mail" placeholder="Your Email">
+                  </div>
+                  <div class="form-group">
+                    <select id="ticket-type" name="ticket-type" class="form-control" >
+                      <option value="">-- Select Your Ticket Type --</option>
+                      <option value="standard-access">Standard Access</option>
+                      <option value="pro-access">Pro Access</option>
+                      <option value="premium-access">Premium Access</option>
+                    </select>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn">Buy Now</button>
                   </div>
                 </form>
               </div>
-              <!-- /contact form -->
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+  
+      </section>
+      <!--==========================
+        Gallery Section
+      ============================-->
+      <div id="portfolio" class="section md-padding bg-grey">
+
+        <!-- Container -->
+        <div class="container">
+
+          <!-- Row -->
+          <div class="row">
+
+            <!-- Section header -->
+            <div class="section-header text-center">
+              <h2 class="title"><%= __("gallery") %></h2>
+            </div>
+
+            <!-- /Section header -->
+            <!-- SnapWidget -->
 
           </div>
-          <!-- /Testimonial slider -->
-
+          <!-- /Row -->
+          <div class="asdas">
+          </div>
 
         </div>
-        <!-- /Row -->
+        <!-- /Container var token = '8426996539.f1daf10.1bcbc062039b4cb585fd73791b6622fb', // learn how to obtain it below
+            userid = 8426996539, // User ID - get it in source HTML of your Instagram profile or look at the next example :)-->
 
       </div>
-      <!-- /Container -->
 
-    </div>
-    <!-- /Testimonial -->
+      <section class="reservation" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="orta">How do I make reservation?</h2>
+              <p class="text-res">You can use our link Book Now or send message on whatsapp to +90 546 869 1846 for make your reservation. We highly recommend you to make your reservation before you arrive to Cappadocia. The balloon flights are limited in Cappadocia by Turkish Civil Aviation and its better to book in advance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!--==========================
+        F.A.Q Section
+      ============================-->
+      <section id="faq" class="wow fadeInUp">
+  
+        <div class="container">
+  
+          <div class="section-header">
+            <h2>F.A.Q </h2>
+          </div>
+  
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <ul id="faq-list">
+  
+                  <li>
+                    <a data-toggle="collapse" class="collapsed" href="#faq1">
+                      Why Cappadocia Region For Hot Air Balloon Flights?
+                      <i class="fa fa-minus-circle"></i>
+                    </a>
+                    <div id="faq1" class="collapse" data-parent="#faq-list">
+                      <p>
+                      Cappadocia region of Turkey is one of the popular destinations for the tourists. Beside the historical and natural beauties, Cappadocia has good reasons to have a hot air balloon flight. Following reasons make Cappadocia one of the best known hot air balloon flight area in the World. Cappadocia has excellent weather conditions for hot air ballooning. There are roughly 260 flyable days allowing hot air balloon flights in the area. Royal Balloon operates the flights just in the early mornings when the weather conditions are stable, not windy and with mild temperature. The scenery from a balloon over Cappadocia is breathtaking. While soaring between the rock formations and valleys of Cappadocia, you will have plenty of time to enjoy and photographing the scenery.</p>
+                    </div>
+                  </li>
+        
+                  <li>
+                    <a data-toggle="collapse" href="#faq2" class="collapsed">
+                      Who decides cancellation of the balloon tour?
+                      <i class="fa fa-minus-circle"></i>
+                    </a>
+                    <div id="faq2" class="collapse" data-parent="#faq-list">
+                      <p>
+                      Balloon tours are depending on weather conditions. Turkish Civil Aviation Authority has a Representation Office in Cappadocia that gives approval of balloon flights if the weather conditions are within limits. This applies to all hot air balloon companies in Cappadocia. 
+</p>
+                    </div>
+                  </li>
+        
+                  <li>
+                    <a data-toggle="collapse" href="#faq3" class="collapsed">
+                      What happens if my balloon tour is cancelled due to bad weather?
+<i class="fa fa-minus-circle"></i></a>
+                    <div id="faq3" class="collapse" data-parent="#faq-list">
+                      <p>
+                      If there is a cancellation made by the Turkish Civil Aviation Authority (due to bad weather conditions), you can choose to be rescheduled to next morning subject to availability or get 100% payment refund. </p>
+                    </div>
+                  </li>
+        
+                  <li>
+                    <a data-toggle="collapse" href="#faq4" class="collapsed">
+                      Is there any age limit for hot air balloon tours?
+<i class="fa fa-minus-circle"></i></a>
+                    <div id="faq4" class="collapse" data-parent="#faq-list">
+                      <p>As Cappadocia Airways we unfortunately do not accept children below age of 6. Because of the height of the basket, they will have difficult time to see anything and enjoy the hot air balloon tour. Children below age of 6 may also have difficulties to proceed with the landing position. 
+                      </p>
+                    </div>
+                  </li>
+                                    <li>
+                    <a data-toggle="collapse" href="#faq6" class="collapsed">
+                      more will come soon...
+                      </a>
+                                      </li>
+        
+                </ul>
+            </div>
+          </div>
+  
+        </div>
+  
+      </section>
+  
+      <!--==========================
+        Subscribe Section
+      ============================-->
+      <section id="subscribe">
+        <div class="container wow fadeInUp">
+          <!-- Testimonial -->
+          <div id="testimonial" class="section md-padding">
 
-    <!-- Blog
-    <div id="blog" class="section md-padding bg-grey">
 
+            <!-- Container -->
+
+              <!-- Row -->
+              <div class="row">
+
+                <!-- Testimonial slider -->
+                <div class="col-md-12 col-md-offset-1">
+                    <!-- testimonial -->
+                    <% for (var i = 0; i < data.length; i++) { %>
+                    <div class="testimonial-header">
+                      <div class="testimonial-meta">
+                        <h3 class="white-text"><%= data[i].nickname %></h3>
+                      </div>
+                      <p><%= data[i].experience %></p>
+                    </div>
+                    <!-- /testimonial -->
+                    <% } %>
+                    <!-- contact form -->
+                    <div>
+                      <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-8">
+                          <form action="/reviews" method="POST" class="contact-form">
+                              <div class="section-center">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-md-9">
+                                      <div class="booking-form booking-forms">
+                                        <form>
+                                          <div class="row">
+                                            <div class="col-sm-12">
+                                              <div class="form-group">
+                                                <input class="form-control form-controls" name="nickname" placeholder="Full name" required />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-sm-12">
+                                              <div class="form-group">
+                                                <textarea class="form-control form-controls" placeholder="Details of experience" name="experience" ></textarea>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="form-btn">
+                                            <button class="submit-btn submit-btns">Save</button>
+                                          </div>
+                                        </form>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /contact form -->
+
+                </div>
+                <!-- /Testimonial slider -->
+
+
+              </div>
+              <!-- /Row -->
+
+
+          </div>
+          <!-- /Testimonial -->
+        </div>
+      </section>
+  
+      <!--==========================
+        Contact Section
+      ============================-->
+      <section id="contact" class="section-bg wow fadeInUp">
+  
+        <div class="container">
+          <div class="row contact-info">
+            <div class="col-md-4 hover-a">
+              <a class="" href="tel:+905468691846" onclick="gtag_report_conversion()">
+              <div class="contact-phone">
+                <i class="fa fa-phone"></i>
+                <h3>Phone Number</h3>
+                <p>+90 546 869 1846</p>
+              </div>
+            </a>
+            </div>
+  
+            <div class="col-md-4 hover-a">
+              <a href="mailto:contact@hotair-balloons.com" onclick="gtag_report_conversion()">
+                <div class="contact-phone">
+                 <i class="fa fa-envelope"></i>
+                  <h3>E-mail</h3>
+                  <p>contact@hotair-balloons.com</p>
+                </div>
+              </a>
+            </div>
+  
+            <div class="col-md-4 hover-a">
+                <a href="https://www.instagram.com/cappadocia_airways/" target="_blank" onclick="gtag_report_conversion()">
+                  <div class="contact-email">
+                    <i class="fa fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>cappadocia_airways</p>
+                  </div>
+                </a>
+              </div>
+  
+          </div>
+  
+          <div class="form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form  action="/message" method="POST" role="form" class="contactForm">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" name="mail" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="text" name="phone" class="form-control" id="mobile" placeholder="Phone Number" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="hotel" class="form-control" name="hotel" id="hotel" placeholder="Hotel Name"/>
+                    <div class="validation"></div>
+                  </div>
+                </div>
+              <div class="form-row">
+
+                <div class="form-group col-md-6">
+                    <input type="date" name="date" class="form-control" id="date" placeholder="date" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                      <select class="form-control" name="country">
+                        <option value="AF">Select Country</option>
+                          <option value="A0">Afghanistan</option>
+                            <option value="AX">Åland Islands</option>
+                            <option value="AL">Albania</option>
+                            <option value="DZ">Algeria</option>
+                            <option value="AS">American Samoa</option>
+                            <option value="AD">Andorra</option>
+                            <option value="AO">Angola</option>
+                            <option value="AI">Anguilla</option>
+                            <option value="AQ">Antarctica</option>
+                            <option value="AG">Antigua and Barbuda</option>
+                            <option value="AR">Argentina</option>
+                            <option value="AM">Armenia</option>
+                            <option value="AW">Aruba</option>
+                            <option value="AU">Australia</option>
+                            <option value="AT">Austria</option>
+                            <option value="AZ">Azerbaijan</option>
+                            <option value="BS">Bahamas</option>
+                            <option value="BH">Bahrain</option>
+                            <option value="BD">Bangladesh</option>
+                            <option value="BB">Barbados</option>
+                            <option value="BY">Belarus</option>
+                            <option value="BE">Belgium</option>
+                            <option value="BZ">Belize</option>
+                            <option value="BJ">Benin</option>
+                            <option value="BM">Bermuda</option>
+                            <option value="BT">Bhutan</option>
+                            <option value="BO">Bolivia, Plurinational State of</option>
+                            <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                            <option value="BA">Bosnia and Herzegovina</option>
+                            <option value="BW">Botswana</option>
+                            <option value="BV">Bouvet Island</option>
+                            <option value="BR">Brazil</option>
+                            <option value="IO">British Indian Ocean Territory</option>
+                            <option value="BN">Brunei Darussalam</option>
+                            <option value="BG">Bulgaria</option>
+                            <option value="BF">Burkina Faso</option>
+                            <option value="BI">Burundi</option>
+                            <option value="KH">Cambodia</option>
+                            <option value="CM">Cameroon</option>
+                            <option value="CA">Canada</option>
+                            <option value="CV">Cape Verde</option>
+                            <option value="KY">Cayman Islands</option>
+                            <option value="CF">Central African Republic</option>
+                            <option value="TD">Chad</option>
+                            <option value="CL">Chile</option>
+                            <option value="CN">China</option>
+                            <option value="CX">Christmas Island</option>
+                            <option value="CC">Cocos (Keeling) Islands</option>
+                            <option value="CO">Colombia</option>
+                            <option value="KM">Comoros</option>
+                            <option value="CG">Congo</option>
+                            <option value="CD">Congo, the Democratic Republic of the</option>
+                            <option value="CK">Cook Islands</option>
+                            <option value="CR">Costa Rica</option>
+                            <option value="CI">Côte d'Ivoire</option>
+                            <option value="HR">Croatia</option>
+                            <option value="CU">Cuba</option>
+                            <option value="CW">Curaçao</option>
+                            <option value="CY">Cyprus</option>
+                            <option value="CZ">Czech Republic</option>
+                            <option value="DK">Denmark</option>
+                            <option value="DJ">Djibouti</option>
+                            <option value="DM">Dominica</option>
+                            <option value="DO">Dominican Republic</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="EG">Egypt</option>
+                            <option value="SV">El Salvador</option>
+                            <option value="GQ">Equatorial Guinea</option>
+                            <option value="ER">Eritrea</option>
+                            <option value="EE">Estonia</option>
+                            <option value="ET">Ethiopia</option>
+                            <option value="FK">Falkland Islands (Malvinas)</option>
+                            <option value="FO">Faroe Islands</option>
+                            <option value="FJ">Fiji</option>
+                            <option value="FI">Finland</option>
+                            <option value="FR">France</option>
+                            <option value="GF">French Guiana</option>
+                            <option value="PF">French Polynesia</option>
+                            <option value="TF">French Southern Territories</option>
+                            <option value="GA">Gabon</option>
+                            <option value="GM">Gambia</option>
+                            <option value="GE">Georgia</option>
+                            <option value="DE">Germany</option>
+                            <option value="GH">Ghana</option>
+                            <option value="GI">Gibraltar</option>
+                            <option value="GR">Greece</option>
+                            <option value="GL">Greenland</option>
+                            <option value="GD">Grenada</option>
+                            <option value="GP">Guadeloupe</option>
+                            <option value="GU">Guam</option>
+                            <option value="GT">Guatemala</option>
+                            <option value="GG">Guernsey</option>
+                            <option value="GN">Guinea</option>
+                            <option value="GW">Guinea-Bissau</option>
+                            <option value="GY">Guyana</option>
+                            <option value="HT">Haiti</option>
+                            <option value="HM">Heard Island and McDonald Islands</option>
+                            <option value="VA">Holy See (Vatican City State)</option>
+                            <option value="HN">Honduras</option>
+                            <option value="HK">Hong Kong</option>
+                            <option value="HU">Hungary</option>
+                            <option value="IS">Iceland</option>
+                            <option value="IN">India</option>
+                            <option value="ID">Indonesia</option>
+                            <option value="IR">Iran, Islamic Republic of</option>
+                            <option value="IQ">Iraq</option>
+                            <option value="IE">Ireland</option>
+                            <option value="IM">Isle of Man</option>
+                            <option value="IL">Israel</option>
+                            <option value="IT">Italy</option>
+                            <option value="JM">Jamaica</option>
+                            <option value="JP">Japan</option>
+                            <option value="JE">Jersey</option>
+                            <option value="JO">Jordan</option>
+                            <option value="KZ">Kazakhstan</option>
+                            <option value="KE">Kenya</option>
+                            <option value="KI">Kiribati</option>
+                            <option value="KP">Korea, Democratic People's Republic of</option>
+                            <option value="KR">Korea, Republic of</option>
+                            <option value="KW">Kuwait</option>
+                            <option value="KG">Kyrgyzstan</option>
+                            <option value="LA">Lao People's Democratic Republic</option>
+                            <option value="LV">Latvia</option>
+                            <option value="LB">Lebanon</option>
+                            <option value="LS">Lesotho</option>
+                            <option value="LR">Liberia</option>
+                            <option value="LY">Libya</option>
+                            <option value="LI">Liechtenstein</option>
+                            <option value="LT">Lithuania</option>
+                            <option value="LU">Luxembourg</option>
+                            <option value="MO">Macao</option>
+                            <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                            <option value="MG">Madagascar</option>
+                            <option value="MW">Malawi</option>
+                            <option value="MY">Malaysia</option>
+                            <option value="MV">Maldives</option>
+                            <option value="ML">Mali</option>
+                            <option value="MT">Malta</option>
+                            <option value="MH">Marshall Islands</option>
+                            <option value="MQ">Martinique</option>
+                            <option value="MR">Mauritania</option>
+                            <option value="MU">Mauritius</option>
+                            <option value="YT">Mayotte</option>
+                            <option value="MX">Mexico</option>
+                            <option value="FM">Micronesia, Federated States of</option>
+                            <option value="MD">Moldova, Republic of</option>
+                            <option value="MC">Monaco</option>
+                            <option value="MN">Mongolia</option>
+                            <option value="ME">Montenegro</option>
+                            <option value="MS">Montserrat</option>
+                            <option value="MA">Morocco</option>
+                            <option value="MZ">Mozambique</option>
+                            <option value="MM">Myanmar</option>
+                            <option value="NA">Namibia</option>
+                            <option value="NR">Nauru</option>
+                            <option value="NP">Nepal</option>
+                            <option value="NL">Netherlands</option>
+                            <option value="NC">New Caledonia</option>
+                            <option value="NZ">New Zealand</option>
+                            <option value="NI">Nicaragua</option>
+                            <option value="NE">Niger</option>
+                            <option value="NG">Nigeria</option>
+                            <option value="NU">Niue</option>
+                            <option value="NF">Norfolk Island</option>
+                            <option value="MP">Northern Mariana Islands</option>
+                            <option value="NO">Norway</option>
+                            <option value="OM">Oman</option>
+                            <option value="PK">Pakistan</option>
+                            <option value="PW">Palau</option>
+                            <option value="PS">Palestinian Territory, Occupied</option>
+                            <option value="PA">Panama</option>
+                            <option value="PG">Papua New Guinea</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="PE">Peru</option>
+                            <option value="PH">Philippines</option>
+                            <option value="PN">Pitcairn</option>
+                            <option value="PL">Poland</option>
+                            <option value="PT">Portugal</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="QA">Qatar</option>
+                            <option value="RE">Réunion</option>
+                            <option value="RO">Romania</option>
+                            <option value="RU">Russian Federation</option>
+                            <option value="RW">Rwanda</option>
+                            <option value="BL">Saint Barthélemy</option>
+                            <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                            <option value="KN">Saint Kitts and Nevis</option>
+                            <option value="LC">Saint Lucia</option>
+                            <option value="MF">Saint Martin (French part)</option>
+                            <option value="PM">Saint Pierre and Miquelon</option>
+                            <option value="VC">Saint Vincent and the Grenadines</option>
+                            <option value="WS">Samoa</option>
+                            <option value="SM">San Marino</option>
+                            <option value="ST">Sao Tome and Principe</option>
+                            <option value="SA">Saudi Arabia</option>
+                            <option value="SN">Senegal</option>
+                            <option value="RS">Serbia</option>
+                            <option value="SC">Seychelles</option>
+                            <option value="SL">Sierra Leone</option>
+                            <option value="SG">Singapore</option>
+                            <option value="SX">Sint Maarten (Dutch part)</option>
+                            <option value="SK">Slovakia</option>
+                            <option value="SI">Slovenia</option>
+                            <option value="SB">Solomon Islands</option>
+                            <option value="SO">Somalia</option>
+                            <option value="ZA">South Africa</option>
+                            <option value="GS">South Georgia and the South Sandwich Islands</option>
+                            <option value="SS">South Sudan</option>
+                            <option value="ES">Spain</option>
+                            <option value="LK">Sri Lanka</option>
+                            <option value="SD">Sudan</option>
+                            <option value="SR">Suriname</option>
+                            <option value="SJ">Svalbard and Jan Mayen</option>
+                            <option value="SZ">Swaziland</option>
+                            <option value="SE">Sweden</option>
+                            <option value="CH">Switzerland</option>
+                            <option value="SY">Syrian Arab Republic</option>
+                            <option value="TW">Taiwan, Province of China</option>
+                            <option value="TJ">Tajikistan</option>
+                            <option value="TZ">Tanzania, United Republic of</option>
+                            <option value="TH">Thailand</option>
+                            <option value="TL">Timor-Leste</option>
+                            <option value="TG">Togo</option>
+                            <option value="TK">Tokelau</option>
+                            <option value="TO">Tonga</option>
+                            <option value="TT">Trinidad and Tobago</option>
+                            <option value="TN">Tunisia</option>
+                            <option value="TR">Turkey</option>
+                            <option value="TM">Turkmenistan</option>
+                            <option value="TC">Turks and Caicos Islands</option>
+                            <option value="TV">Tuvalu</option>
+                            <option value="UG">Uganda</option>
+                            <option value="UA">Ukraine</option>
+                            <option value="AE">United Arab Emirates</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="US">United States</option>
+                            <option value="UM">United States Minor Outlying Islands</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="UZ">Uzbekistan</option>
+                            <option value="VU">Vanuatu</option>
+                            <option value="VE">Venezuela, Bolivarian Republic of</option>
+                            <option value="VN">Viet Nam</option>
+                            <option value="VG">Virgin Islands, British</option>
+                            <option value="VI">Virgin Islands, U.S.</option>
+                            <option value="WF">Wallis and Futuna</option>
+                            <option value="EH">Western Sahara</option>
+                            <option value="YE">Yemen</option>
+                            <option value="ZM">Zambia</option>
+                            <option value="ZW">Zimbabwe</option>
+                        </select>
+                    <div class="validation"></div>
+                  </div>
+              </div>
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <select class="form-control" name="tour">
+                                <option>Standart Plan (£200)</option>
+                                <option>Comfort Plan (£250)</option>
+                                <option>Ultra-Comfort Plan (£300)</option>
+                              </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="people" class="form-control" name="number" id="people" placeholder="Number of People" />
+                          <div class="validation"></div>
+                        </div>
+                      </div>   
+                  </div>  
+              <div class="form-group">
+                <textarea class="form-control" name="detail" rows="5" data-msg="Please write something for us" placeholder="Details"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center"><button type="submit" onclick="gtag_report_conversion()">Send Message</button></div>
+            </form>
+          </div>
+  
+        </div>
+      </section><!-- #contact -->
+  
+    </main>
+  
+  
+    <!--==========================
+      Footer
+    ============================-->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6 footer-info">
+              <img src="img/logo.png" alt="TheEvenet">
+              <p>We are not an agency, just crew inside the balloon sector. So you can take your service without intermediary people. </p>
+            </div>
+  
+            <div class="col-lg-5 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
+                <li><i class="fa fa-angle-right"></i> <a href="#about">About us</a></li>
+                <li><i class="fa fa-angle-right"></i> <a href="#buy-tickets">Prices</a></li>
+                <li><i class="fa fa-angle-right"></i> <a href="#portfolio">Gallery</a></li>
+                <li><i class="fa fa-angle-right"></i> <a href="#faq">FAQ</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-1 col-md-6 footer-links">
+
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+                <strong>Phone:</strong> +90 546 869 1846<br>
+                <strong>Email:</strong> contact@hotair-balloons.com<br>
+              </p>
+  
+              <div class="social-links">
+                <a href="https://www.instagram.com/cappadocia_airways/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+              </div>
+  
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
       <div class="container">
-
-        <div class="row">
-
-          <div class="section-header text-center">
-            <h2 class="title">Recents news</h2>
-          </div>
-
-          <div class="col-md-4">
-            <div class="blog">
-              <div class="blog-img">
-                <img class="img-responsive" src="./img/blog1.jpg" alt="">
-              </div>
-              <div class="blog-content">
-                <ul class="blog-meta">
-                  <li><i class="fa fa-user"></i>John doe</li>
-                  <li><i class="fa fa-clock-o"></i>18 Oct</li>
-                  <li><i class="fa fa-comments"></i>57</li>
-                </ul>
-                <h3>Molestie at elementum eu facilisis sed odio</h3>
-                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-                <a href="blog-single.html">Read more</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="blog">
-              <div class="blog-img">
-                <img class="img-responsive" src="./img/blog2.jpg" alt="">
-              </div>
-              <div class="blog-content">
-                <ul class="blog-meta">
-                  <li><i class="fa fa-user"></i>John doe</li>
-                  <li><i class="fa fa-clock-o"></i>18 Oct</li>
-                  <li><i class="fa fa-comments"></i>57</li>
-                </ul>
-                <h3>Molestie at elementum eu facilisis sed odio</h3>
-                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-                <a href="blog-single.html">Read more</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="blog">
-              <div class="blog-img">
-                <img class="img-responsive"  src="./img/blog3.jpg" alt="">
-              </div>
-              <div class="blog-content">
-                <ul class="blog-meta">
-                  <li><i class="fa fa-user"></i>John doe</li>
-                  <li><i class="fa fa-clock-o"></i>18 Oct</li>
-                  <li><i class="fa fa-comments"></i>57</li>
-                </ul>
-                <h3>Molestie at elementum eu facilisis sed odio</h3>
-                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-                <a href="blog-single.html">Read more</a>
-              </div>
-            </div>
-          </div>
-
+        <div class="copyright">
+          &copy; Copyright <strong>Cappadocia Airways</strong>. All Rights Reserved
         </div>
-
+        <div class="credits">
+          <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+          -->
+          Designed by <a href="https://github.com/gorkemuz">Görkem Uz</a>
+        </div>
       </div>
-
-    </div>
-      -->
-      <% include ./partials/gallery %>
-    <% include ./partials/contact %>
-
-
-    <!-- Footer -->
-    <% include ./partials/footer %>
-
-    <!-- Preloader -->
-    <% include ./partials/preloader %>
-    <!-- /Preloader -->
-
-</body>
+    </footer><!-- #footer -->
+  
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+  
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/venobox/venobox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+  
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+  </body>
+  
 </html>

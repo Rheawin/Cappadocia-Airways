@@ -10,26 +10,6 @@ router.get('/', function(req, res, next) {
     res.render('index', { title: 'Cappadocia Airways | Hot Air Balloons Cappadocia', data: data });
   })
 });
-router.get('/faq', function(req, res, next) {
-  res.render('faq', { title: 'FAQ | Cappadocia Airways' });
-});
-router.get('/booking', function(req, res, next) {
-  res.render('booking', { title: 'BOOKING | Cappadocia Airways' });
-});
-router.get('/gallery', function(req, res, next) {
-  res.render('gallery', { title: 'GALLERY | Cappadocia Airways' });
-});
-router.get('/services', function(req, res, next) {
-  res.render('services', { title: 'SERVICES | Cappadocia Airways' });
-});
-router.get('/prices', function(req, res, next) {
-  res.render('prices', { title: 'PRICES | Cappadocia Airways' });
-});
-router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'ABOUT | Cappadocia Airways' });
-});
-
-
 
 
 /* ============= POSTS ============= */
@@ -57,7 +37,7 @@ router.post('/message' , function(req, res, next) {
       from: `"YENİ REZERVASYON" <cappadocia-airways@yandex.com.tr>`,
       to: 'contact@hotair-balloons.com',
     subject: 'New Message! | '+req.body.tour,
-    html: 'Kimden: '+req.body.mail+'<br>İsim: '+req.body.name+'<br>Telefon:'+req.body.mobile+'<br>Hotel:'+req.body.hotel+'<br>Tarih:'+req.body.date+'<br>Ülke:'+req.body.country+'<br>Tur:'+req.body.tour+'<br>Yetişkin sayısı:'+req.body.number+'<br><hr>details:'+req.body.details
+    html: 'Kimden: '+req.body.mail+'<br>İsim: '+req.body.name+'<br>Telefon:'+req.body.phone+'<br>Hotel:'+req.body.hotel+'<br>Tarih:'+req.body.date+'<br>Ülke:'+req.body.country+'<br>Tur:'+req.body.tour+'<br>Yetişkin sayısı:'+req.body.number+'<br><hr>Detaylar:'+req.body.detail
   };
   transporter.sendMail(mailOptions, function (err, info) {
      if(err)
