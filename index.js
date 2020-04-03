@@ -12,11 +12,15 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
-mongoose.connect('mongodb://rhaenwa:asdas111@ds113443.mlab.com:13443/local_library', {
+mongo_url= "mongodb+srv://rhaenwa:asdas111@cluster0-chjwx.mongodb.net/test?retryWrites=true&w=majority"
+mongoose.connect(mongo_url, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
+  socketTimeoutMS: 0
   })
+  .then(()=>console.log("DB server connect"))
+  .catch(e => console.log("DB error", e));
+
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use(logger('dev'));
@@ -38,7 +42,6 @@ app.use(function(req, res, next) {
   req.i18n.setLocale('en')
   req.i18n.setLocaleFromQuery();
   req.i18n.setLocaleFromCookie();
-  console.log(res.i18n);
   next();
 });
 

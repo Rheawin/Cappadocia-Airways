@@ -143,7 +143,10 @@ jQuery(document).ready(function( $ ) {
   })
 
 // custom code
-  $('.submit-btn').on('click',function(){
+  $('.submit-btn-booking').on('click',function(){
+    alert('Successful booking! We will return to you again');
+  })
+  $('.submit-btn-review').on('click',function(){
     alert('Successful booking! We will return to you again');
   })
   var token = '8426996539.f1daf10.1bcbc062039b4cb585fd73791b6622fb', // learn how to obtain it below
