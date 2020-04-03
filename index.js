@@ -14,7 +14,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 mongo_url= "mongodb+srv://rhaenwa:asdas111@cluster0-chjwx.mongodb.net/test?retryWrites=true&w=majority"
 mongoose.connect(mongo_url, {
-  useUnifiedTopology: true,
   useNewUrlParser: true,
   socketTimeoutMS: 0
   })
