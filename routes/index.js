@@ -30,7 +30,7 @@ router.post('/message' , function(req, res, next) {
       port: 465,
       auth: {
           user: 'cappadocia-airways@yandex.com.tr',
-          pass: '2782765td' },
+          pass: '**********' },
       secure: true
   })
   const mailOptions = {
